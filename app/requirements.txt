@@ -1,0 +1,13 @@
+streamlit==1.39.0
+torch==2.5.1
+torchvision==0.20.1
+transformers==4.46.3
+pandas==2.2.3
+numpy==1.26.4
+opencv-python==4.10.0.84
+speechrecognition==3.10.0
+pydub==0.25.1
+matplotlib==3.9.2
+seaborn==0.13.2
+reportlab==4.2.2
+plotly==5.24.1

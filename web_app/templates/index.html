@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Video for Sentiment and Emotion Analysis</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/mp4">
+        <input type="submit" value="Upload">
+    </form>
+    <div id="results"></div>
+    <script>
+        document.querySelector('form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const response = await fetch('/', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            const resultsDiv = document.getElementById('results');
+            if (data.error) {
+                resultsDiv.innerHTML = `<p style="color: red;">${data.error}</p>`;
+            } else {
+                let html = '<h2>Results:</h2><ul>';
+                data.forEach(item => {
+                    html += `<li>${item.timeframe}: Emotion: ${item.emotion} (${item.emotion_confidence.toFixed(2)}), Sentiment: ${item.sentiment} (${item.sentiment_confidence.toFixed(2)})</li>`;
+                });
+                html += '</ul>';
+                resultsDiv.innerHTML = html;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "os": "macOS-15.2-arm64-arm-64bit",
+  "python": "CPython 3.11.9",
+  "startedAt": "2025-03-04T09:58:02.220487Z",
+  "args": [
+    "--epochs",
+    "20",
+    "--batch-size",
+    "16",
+    "--learning-rate",
+    "0.001"
+  ],
+  "program": "/Users/skarthik/Downloads/video-sentiment-model/training/train.py",
+  "codePath": "Downloads/video-sentiment-model/training/train.py",
+  "git": {
+    "commit": "d7bd7d6fc9e1a0455ee37f156fad745405a10ddb"
+  },
+  "email": "devworld.karthik@gmail.com",
+  "root": "/Users/skarthik/Downloads/video-sentiment-model",
+  "host": "Ss-MacBook-Air.local",
+  "executable": "/Users/skarthik/Downloads/video-sentiment-model/.venv/bin/python",
+  "codePathLocal": "training/train.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "197221056512"
+    },
+    "/System/Volumes/Data": {
+      "total": "245107195904",
+      "used": "197221056512"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Apple M1",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 7,
+    "memoryGb": 8,
+    "swapTotalBytes": "2147483648",
+    "ramTotalBytes": "8589934592"
+  }
+}

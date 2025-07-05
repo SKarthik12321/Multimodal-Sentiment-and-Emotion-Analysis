@@ -1,0 +1,8 @@
+# Ignore dataset and large files
+MELD.Raw/
+models/model.pth
+.venv/
+*.tar.gz
+*.pkl
+*.h5
+*.mp4

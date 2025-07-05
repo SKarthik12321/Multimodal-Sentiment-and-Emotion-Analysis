@@ -1,0 +1,15 @@
+{"time":"2025-03-04T15:26:23.460563+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/Users/skarthik/Downloads/video-sentiment-model/wandb/run-20250304_152622-b0j6w1gs/logs/debug-core.log"}
+{"time":"2025-03-04T15:26:23.674855+05:30","level":"INFO","msg":"created new stream","id":"b0j6w1gs"}
+{"time":"2025-03-04T15:26:23.674903+05:30","level":"INFO","msg":"stream: started","id":"b0j6w1gs"}
+{"time":"2025-03-04T15:26:23.674993+05:30","level":"INFO","msg":"sender: started","stream_id":"b0j6w1gs"}
+{"time":"2025-03-04T15:26:23.675016+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"b0j6w1gs"}
+{"time":"2025-03-04T15:26:23.675192+05:30","level":"INFO","msg":"handler: started","stream_id":"b0j6w1gs"}
+{"time":"2025-03-04T15:26:24.558033+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T15:26:42.657297+05:30","level":"INFO","msg":"stream: closing","id":"b0j6w1gs"}
+{"time":"2025-03-04T15:26:42.65849+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T15:26:42.662702+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T15:26:46.714519+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T15:26:48.298886+05:30","level":"INFO","msg":"sender: closed","stream_id":"b0j6w1gs"}
+{"time":"2025-03-04T15:26:48.298866+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"b0j6w1gs"}
+{"time":"2025-03-04T15:26:48.299909+05:30","level":"INFO","msg":"handler: closed","stream_id":"b0j6w1gs"}
+{"time":"2025-03-04T15:26:48.299968+05:30","level":"INFO","msg":"stream: closed","id":"b0j6w1gs"}

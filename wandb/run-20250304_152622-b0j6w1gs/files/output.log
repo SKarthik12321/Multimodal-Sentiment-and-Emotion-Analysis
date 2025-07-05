@@ -1,0 +1,50 @@
+Training Progress:   0%|                                                                                                                                   | 0/20 [00:11<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/skarthik/Downloads/video-sentiment-model/training/train.py", line 77, in <module>
+    main()
+  File "/Users/skarthik/Downloads/video-sentiment-model/training/train.py", line 61, in main
+    train_loss = trainer.train_epoch()  # Call the train_epoch method
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/training/models.py", line 78, in train_epoch
+    outputs = self.model(text_inputs, video_frames, audio_features)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/training/models.py", line 28, in forward
+    video_features = self.video_encoder(video_frames)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torchvision/models/video/resnet.py", line 251, in forward
+    x = self.stem(x)
+        ^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 725, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/skarthik/Downloads/video-sentiment-model/.venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 720, in _conv_forward
+    return F.conv3d(
+           ^^^^^^^^^
+RuntimeError: Given groups=1, weight of size [64, 3, 3, 7, 7], expected input[16, 30, 3, 224, 224] to have 3 channels, but got 30 channels instead
